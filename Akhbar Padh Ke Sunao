@@ -10,7 +10,7 @@ def speak(str):
 
 if __name__ == '__main__':
     speak("Neews For Today")
-    url = "http://newsapi.org/v2/top-headlines?country=us&apiKey=cbdc85760dd24aa38bfb4fba8c1a9d72"
+    url = "news api url"
     news = requests.get(url).text
     news_dict = json.loads(news)
     print(news_dict["articles"])
